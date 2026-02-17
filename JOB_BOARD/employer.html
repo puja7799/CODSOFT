@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Page Title -->
+<title>Employer Dashboard</title>
+
+<!-- External CSS file for styling -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- Main Heading -->
+<h1>Employer Dashboard</h1>
+
+<!-- Section Title -->
+<h2>Post Job</h2>
+
+<!-- Job Title Input -->
+<input id="jtitle" placeholder="Job Title">
+
+<!-- Company Name Input -->
+<input id="jcompany" placeholder="Company">
+
+<!-- Job Location Input -->
+<input id="jlocation" placeholder="Location">
+
+<!-- Salary Input -->
+<input id="jsalary" placeholder="Salary">
+
+<!-- Job Description Textarea -->
+<textarea id="jdesc" placeholder="Description"></textarea>
+
+<!-- Button triggers postJob() function -->
+<button onclick="postJob()">Post Job</button>
+
+<!-- Employer Posted Jobs Section -->
+<h2>Your Jobs</h2>
+
+<!-- Container where posted jobs will appear dynamically -->
+<div id="myJobs"></div>
+
+<!-- External JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,329 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Roboto:wght@300;400;500&display=swap');
+
+/* Reset Default Browser Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Variables */
+:root{
+    --primary: #ff3700;
+}
+
+/* Body Styling */
+body{
+    background: #000000;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header/Navbar Container */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 10;
+}
+
+/* Logo Text */
+.logo{
+    font-size: 40px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+/* Navigation Menu */
+.nav{
+    display: flex;
+}
+
+/* Nav Items */
+.nav li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+/* Nav Links */
+.nav li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Nav Hover Effect */
+.nav li:hover a{
+    color: var(--primary);
+}
+
+/* Search Box Container */
+.search{
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+
+/* Search Input Field */
+.search input{
+    position: absolute;
+    inset: 0;
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    border-radius: 4px;
+    padding: 0 10px 0 45px;
+    backdrop-filter: blur(10px);
+}
+
+/* Placeholder Color */
+.search input::placeholder{
+    color: #ffffff;
+}
+
+/* Search Icon */
+.search i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+    border-right: 1px solid #ffffff;
+}
+
+/* Main Banner Section */
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url(image1.jpeg) no-repeat center/cover;
+    overflow: hidden;
+}
+
+/* Dark Overlay on Banner */
+.banner::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Movie Content Section (Hidden by default) */
+.content{
+    position: relative;
+    max-width: 550px;
+    display: none;
+    visibility: hidden;
+    transform: scale(0);
+    transition: 0.5s;
+    z-index: 2;
+}
+
+/* Active Content Visible */
+.content.active{
+    display: block;
+    visibility: visible;
+    transform: scale(1);
+}
+
+/* Movie Title Image */
+.movie-title{
+    max-width: 250px;
+}
+
+/* Movie Info Row */
+.banner .content h4{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 30px;
+}
+
+/* Info Items */
+.banner .content h4 span{
+    padding: 0 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Remove Border First Item */
+.banner .content h4 span:first-child{
+    padding-left: 0;
+}
+
+/* Remove Border Last Item */
+.banner .content h4 span:last-child{
+    border-right: none;
+}
+
+/* Age Badge */
+.banner .content h4 span i{
+    background: var(--primary);
+    color: #ffffff;
+    padding: 0 8px;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+/* Movie Description */
+.banner .content p{
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: #ffffff;
+    margin: 10px 0 20px;
+}
+
+/* Buttons Container */
+.banner .content .button a{
+    display: inline-block;
+    margin-right: 10px;
+    background: var(--primary);
+    color: #ffffff;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+/* Secondary Button */
+.banner .content .button a:nth-child(2){
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Secondary Hover */
+.banner .content .button a:hover:nth-child(2){
+    background: var(--primary);
+}
+
+/* Carousel Container */
+.banner .carousel-box{
+    position: relative;
+    min-width: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    z-index: 2;
+}
+
+/* 3D Carousel */
+.carousel{
+    width: 550px;
+    perspective: 1500px;
+}
+
+/* Carousel Images */
+.carousel .carousel-item img{
+    max-width: 235px;
+    border-radius: 10px;
+    transform: translateX(8px) translateY(-100px);
+    object-fit: cover;
+}
+
+/* Watch Trailer Button */
+.play{
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    display: inline-flex;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+/* Play Icon */
+.play i{
+    margin-right: 10px;
+    font-size: 40px;
+}
+
+/* Play Hover */
+.play:hover{
+    color: var(--primary);
+}
+
+/* Social Icons */
+.sci{
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+    display: inline-flex;
+    gap: 25px;
+    z-index: 2;
+}
+
+/* Social Links */
+.sci a{
+    color: #ffffff;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+/* Social Hover */
+.sci a:hover{
+    color: var(--primary);
+}
+
+/* Trailer Popup */
+.trailer{
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 100;
+}
+
+/* Active Trailer */
+.trailer.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Video Styling */
+.trailer video{
+    max-width: 900px;
+    outline: none;
+}
+
+/* Close Button */
+.close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 30px;
+}

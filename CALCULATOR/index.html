@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta settings for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>Calculator</title>
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Calculator Main Container -->
+    <div class="calculator">
+
+        <!-- Display Screen -->
+        <input type="text" placeholder="0" id="inputBox" readonly>
+
+        <!-- Row 1 : Clear / Delete / Operators -->
+        <div>
+            <button class="operator">AC</button>
+            <button class="operator">DEL</button>
+            <button class="operator">%</button>
+            <button class="operator">/</button>
+        </div>
+
+        <!-- Row 2 : Numbers + Operator -->
+        <div>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operator">*</button>
+        </div>
+
+        <!-- Row 3 -->
+        <div>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="operator">-</button>
+        </div>
+
+        <!-- Row 4 -->
+        <div>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="operator">+</button>
+        </div>
+
+        <!-- Row 5 -->
+        <div>
+            <button>00</button>
+            <button>0</button>
+            <button>.</button>
+            <button class="equalBtn">=</button>
+        </div>
+
+    </div>
+
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>

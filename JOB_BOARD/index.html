@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Character encoding -->
+<meta charset="UTF-8">
+
+<!-- Responsive design meta -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Page Title -->
+<title>Puja Job Board</title>
+
+<!-- External CSS file -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Header Section -->
+<header class="header">
+
+  <!-- Website Title -->
+  <h1>Puja Job Portal</h1>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="login.html">Login</a>
+  </nav>
+
+</header>
+
+
+<!-- Hero Section -->
+<section class="hero">
+
+  <!-- Hero Heading -->
+  <h2>Find Your Dream Job</h2>
+
+  <!-- Hero Description -->
+  <p>Search thousands of jobs from top companies</p>
+
+  <!-- Search Input triggers searchJobs() function -->
+  <input 
+    type="text" 
+    id="search" 
+    placeholder="Search jobs..." 
+    onkeyup="searchJobs()"
+  >
+
+</section>
+
+
+<!-- Featured Jobs Section -->
+<section class="featured">
+
+  <h2>Featured Jobs</h2>
+
+  <!-- Job cards will be dynamically inserted here -->
+  <div id="featuredJobs" class="job-grid"></div>
+
+</section>
+
+
+<!-- Footer Section -->
+<footer>
+  <p>© 2026 Puja | Job Portal Project</p>
+</footer>
+
+<!-- External JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>

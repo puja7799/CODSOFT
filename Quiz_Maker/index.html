@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Character encoding -->
+<meta charset="UTF-8">
+
+<!-- Responsive design support -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO meta info -->
+<meta name="author" content="Puja">
+<meta name="description" content="Interactive Quiz Application built using HTML, CSS and JavaScript">
+<meta name="keywords" content="Quiz App, JavaScript Project, Frontend Project, Internship Project">
+
+<!-- Page title -->
+<title>Puja | Interactive Quiz Application</title>
+
+<!-- External CSS file -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ===== HEADER SECTION ===== -->
+<header>
+<h1>Puja Quiz App</h1>
+<p class="author">Developed by Puja</p>
+</header>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main>
+
+<!-- Start quiz button -->
+<button id="startBtn" type="button" aria-label="Start Quiz">
+Start Quiz
+</button>
+
+<!-- Quiz container (hidden initially) -->
+<section id="quizBox" aria-live="polite" aria-hidden="true">
+
+<!-- Progress text (Question 1/10 etc) -->
+<div id="progressText"></div>
+
+<!-- Progress bar container -->
+<div class="progress">
+<div id="progressBar"></div>
+</div>
+
+<!-- Timer display -->
+<div id="time" aria-label="Timer">15</div>
+
+<!-- Question text -->
+<h2 id="question"></h2>
+
+<!-- Answer options will be inserted dynamically -->
+<div id="answers" role="list"></div>
+
+<!-- Next question button -->
+<button id="nextBtn" type="button" aria-label="Next Question">
+Next
+</button>
+
+<!-- Result section -->
+<div class="result">
+<p id="finalScore"></p>
+<p id="topScore"></p>
+</div>
+
+<!-- Popup message (correct/wrong alert) -->
+<div id="popup" role="alert"></div>
+
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+<small>© 2026 Puja | Frontend Quiz Project</small>
+</footer>
+
+<!-- External JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>

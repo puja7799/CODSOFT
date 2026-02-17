@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Character encoding -->
+<meta charset="UTF-8">
+
+<!-- Responsive viewport for mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Page Title -->
+<title>All Jobs</title>
+
+<!-- External CSS file -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Header Section -->
+<header class="header">
+
+  <!-- Page Heading -->
+  <h1>All Jobs</h1>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
+
+</header>
+
+
+<!-- Search and Filter Controls -->
+<section class="controls">
+
+<!-- Search input triggers searchJobs() function -->
+<input type="text" id="search" placeholder="Search jobs..." onkeyup="searchJobs()">
+
+<!-- Job Type Filters -->
+<div class="filters">
+
+<button onclick="filterType('all')">All</button>
+<button onclick="filterType('Full Time')">Full Time</button>
+<button onclick="filterType('Remote')">Remote</button>
+<button onclick="filterType('Hybrid')">Hybrid</button>
+
+</div>
+
+</section>
+
+
+<!-- Job Cards Container (dynamic jobs will appear here) -->
+<section id="jobList" class="job-grid"></section>
+
+
+<!-- External JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>

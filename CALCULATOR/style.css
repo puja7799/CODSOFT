@@ -1,0 +1,117 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* =========================
+   Global Reset & Font
+========================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =========================
+   Body Styling
+   Center Calculator
+========================= */
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
+/* =========================
+   Calculator Container
+========================= */
+.calculator{
+    border: 1px solid #717377;
+    padding: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* =========================
+   Display Screen
+========================= */
+input{
+    width: 100%;
+    border: none;
+    padding: 22px;
+    margin-bottom: 15px;
+    background: transparent;
+    font-size: 38px;
+    text-align: right;
+    color: #ffffff;
+    box-shadow: inset 0 3px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Placeholder Color */
+input::placeholder{
+    color: #ffffff;
+}
+
+/* Remove outline on click */
+input:focus{
+    outline: none;
+}
+
+/* =========================
+   Buttons Styling
+========================= */
+button{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.15),
+                 4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover Effect */
+button:hover{
+    transform: scale(1.08);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Click Effect */
+button:active{
+    transform: scale(0.95);
+}
+
+/* Operator Buttons */
+.operator{
+    color: #6dee0a;
+}
+
+/* Equal Button */
+.equalBtn{
+    background: #fb7c14;
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(251, 124, 20, 0.6);
+}
+
+/* =========================
+   Responsive Design
+========================= */
+@media (max-width: 400px){
+    button{
+        width: 52px;
+        height: 52px;
+        margin: 6px;
+    }
+
+    input{
+        font-size: 32px;
+    }
+}

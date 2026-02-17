@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Materialize CSS Framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Page Title -->
+    <title>Movie Website | Animated Landing Page</title>
+</head>
+
+<body>
+
+    <!-- HEADER / NAVBAR -->
+    <header>
+
+        <!-- Logo -->
+        <a href="#" class="logo">iMovies</a>
+
+        <!-- Navigation Menu -->
+        <ul class="nav">
+            <li><a href="#"><i class="fa fa-home"></i></a></li>
+            <li><a href="#">Adults</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Trend</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+
+        <!-- Search Box -->
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa fa-search"></i>
+        </div>
+
+    </header>
+
+
+    <!-- MAIN BANNER SECTION -->
+    <div class="banner">
+
+        <!-- Movie Slide 1 -->
+        <div class="content image2 active">
+            <img src="image2.jpeg" class="movie-title">
+            <h4>
+                <span>2023</span>
+                <span><i>12+</i></span>
+                <span>2h 14min</span>
+                <span>Romance</span>
+            </h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <!-- Action Buttons -->
+            <div class="button">
+                <a href="#"><i class="fa fa-play"></i> Watch</a>
+                <a href="#"><i class="fa fa-plus"></i> My List</a>
+            </div>
+        </div>
+
+
+        <!-- Movie Slide 2 -->
+        <div class="content bg-65">
+            <img src="image3.jpeg" class="movie-title">
+            <h4>
+                <span>2023</span>
+                <span><i>15+</i></span>
+                <span>1h 14min</span>
+                <span>Action</span>
+            </h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="button">
+                <a href="#"><i class="fa fa-play"></i> Watch</a>
+                <a href="#"><i class="fa fa-plus"></i> My List</a>
+            </div>
+        </div>
+
+
+        <!-- Movie Slide 3 -->
+        <div class="content the-covenant">
+            <img src="image4.jpeg" class="movie-title">
+            <h4>
+                <span>2023</span>
+                <span><i>16+</i></span>
+                <span>1h 40min</span>
+                <span>Thriller</span>
+            </h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="button">
+                <a href="#"><i class="fa fa-play"></i> Watch</a>
+                <a href="#"><i class="fa fa-plus"></i> My List</a>
+            </div>
+        </div>
+
+
+        <!-- Movie Slide 4 -->
+        <div class="content mermaid">
+            <img src="image5.jpeg" class="movie-title">
+            <h4>
+                <span>2023</span>
+                <span><i>15+</i></span>
+                <span>1h 04min</span>
+                <span>Horror</span>
+            </h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="button">
+                <a href="#"><i class="fa fa-play"></i> Watch</a>
+                <a href="#"><i class="fa fa-plus"></i> My List</a>
+            </div>
+        </div>
+
+
+        <!-- Movie Slide 5 -->
+        <div class="content tank">
+            <img src="image6.jpeg" class="movie-title">
+            <h4>
+                <span>2023</span>
+                <span><i>12+</i></span>
+                <span>2h 04min</span>
+                <span>War/Action</span>
+            </h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="button">
+                <a href="#"><i class="fa fa-play"></i> Watch</a>
+                <a href="#"><i class="fa fa-plus"></i> My List</a>
+            </div>
+        </div>
+
+
+        <!-- Carousel Thumbnail Navigation -->
+        <div class="carousel-box">
+            <div class="carousel">
+                <div class="carousel-item" onclick="changeBg('bg-image2.jpeg','image2')"><img src="image2.jpeg"></div>
+                <div class="carousel-item" onclick="changeBg('bg-65.jpeg','bg-65')"><img src="65.jpeg"></div>
+                <div class="carousel-item" onclick="changeBg('bg-the-covenant.jpeg','the-covenant')"><img src="the-covenant.jpeg"></div>
+                <div class="carousel-item" onclick="changeBg('bg-mermaid.jpeg','mermaid')"><img src="mermaid.jpeg"></div>
+                <div class="carousel-item" onclick="changeBg('bg-tank.jpeg','tank')"><img src="tank.jpeg"></div>
+            </div>
+        </div>
+
+
+        <!-- Trailer Button -->
+        <a href="#" class="play" onclick="toggleVideo()">
+            <i class="fa fa-play-circle-o"></i> Watch Trailer
+        </a>
+
+
+        <!-- Social Icons -->
+        <ul class="sci">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+
+    </div>
+
+
+    <!-- Trailer Popup -->
+    <div class="trailer">
+        <video src="video.mp4" controls></video>
+        <img src="cros.jpeg" class="close" onclick="toggleVideo()">
+    </div>
+
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+
+    <!-- Carousel Initialization Script -->
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                dist: -50,
+                shift: 10,
+                padding: 200,
+                numVisible: 5
+            });
+        });
+    </script>
+
+</body>
+</html>
